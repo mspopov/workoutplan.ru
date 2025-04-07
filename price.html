@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Workout Plan Pricing</title>
+  <title>Цены на план тренировок</title>
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -72,8 +72,8 @@
     }
 
     .plan button {
-      background: black;
-      color: white;
+      background: #f2f2f2;
+      color: black;
       border: none;
       padding: 12px 20px;
       border-radius: 8px;
@@ -82,8 +82,9 @@
       width: 100%;
     }
 
-    .plan button:hover {
-      background: #333;
+    .active button{
+      background: #05f;
+      color: white;
     }
 
     /* --- Adaptive styles --- */
@@ -131,40 +132,42 @@
 <body>
 
   <header>
-    <h1>Choose your plan</h1>
+    <h1>Выбери свой тариф</h1>
   </header>
 
   <section class="pricing-container">
     <!-- One-time Plan -->
-    <div class="plan">
-      <h2>One-time preparation</h2>
-      <div class="price">$39</div>
+    <div class="plan active">
+      <h2>Единовременная подготовка</h2>
+      <div class="price">4000₽</div>
+      <br>
       <ul>
-        <li>One professional workout plan</li>
-        <li>One plan amendment</li>
-        <li>Weekly calendar overview</li>
-        <li>Daily step-by-step plan</li>
-        <li>Online trainer support</li>
+        <li>&#x2705; Один профессиональный план тренировок</li>
+        <li>&#x2705; Одно изменение плана</li>
+        <li>&#x2705; Еженедельный обзор календаря</li>
+        <li>&#x2705; Ежедневный пошаговый план</li>
+        <li style="text-decoration: line-through;">&#x1F6AB; Поддержка онлайн-тренера</li>
       </ul>
-      <a href="https://buy.stripe.com/test_4gw9DhcTr4eG9sI288" target="_blank">
-        <button>Buy now</button>
+      <br>
+      <a href="#" target="_blank">
+        <button>Купить сейчас</button>
       </a>
     </div>
 
     <!-- Yearly Subscription -->
     <div class="plan">
-      <h2>Yearly subscription</h2>
-      <div class="price">$29 <span class="sub-price">/month</span></div>
-      <div class="sub-price">$348 / year</div>
+      <h2>Годовая подписка</h2>
+      <div class="price">3000₽ <span class="sub-price">/месяц</span></div>
+      <div class="sub-price">36000₽ / год</div>
       <ul>
-        <li>Up to 12 professional workout plans</li>
-        <li>Monthly plan amendment</li>
-        <li>Weekly calendar overview</li>
-        <li>Daily step-by-step plan</li>
-        <li>Online trainer support</li>
+        <li>&#x2705; До 12 профессиональных планов тренировок</li>
+        <li>&#x2705; Ежемесячное изменение плана</li>
+        <li>&#x2705; Еженедельный обзор календаря</li>
+        <li>&#x2705; Ежедневный пошаговый план</li>
+        <li>&#x2705; Поддержка онлайн-тренера</li>
       </ul>
-      <a href="https://buy.stripe.com/test_7sI8y58rfaeG6gMdQR" target="_blank">
-        <button>Subscribe</button>
+      <a href="#" target="_blank">
+        <button>Подписаться</button>
       </a>
     </div>
   </section>
