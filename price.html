@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workout Plan Pricing</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #111;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .pricing-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .plan {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      width: 320px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .plan h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .plan .price {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .plan .sub-price {
+      font-size: 16px;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .plan ul li {
+      margin-bottom: 10px;
+    }
+
+    .plan button {
+      background: black;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .plan button:hover {
+      background: #333;
+    }
+
+    /* --- Adaptive styles --- */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      .pricing-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .plan {
+        width: 90%;
+        padding: 24px;
+      }
+
+      .plan .price {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .plan h2 {
+        font-size: 18px;
+      }
+
+      .plan .sub-price {
+        font-size: 14px;
+      }
+
+      .plan ul li {
+        font-size: 14px;
+      }
+
+      .plan button {
+        font-size: 14px;
+        padding: 10px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Choose your plan</h1>
+  </header>
+
+  <section class="pricing-container">
+    <!-- One-time Plan -->
+    <div class="plan">
+      <h2>One-time preparation</h2>
+      <div class="price">$39</div>
+      <ul>
+        <li>One professional workout plan</li>
+        <li>One plan amendment</li>
+        <li>Weekly calendar overview</li>
+        <li>Daily step-by-step plan</li>
+        <li>Online trainer support</li>
+      </ul>
+      <a href="https://buy.stripe.com/test_4gw9DhcTr4eG9sI288" target="_blank">
+        <button>Buy now</button>
+      </a>
+    </div>
+
+    <!-- Yearly Subscription -->
+    <div class="plan">
+      <h2>Yearly subscription</h2>
+      <div class="price">$29 <span class="sub-price">/month</span></div>
+      <div class="sub-price">$348 / year</div>
+      <ul>
+        <li>Up to 12 professional workout plans</li>
+        <li>Monthly plan amendment</li>
+        <li>Weekly calendar overview</li>
+        <li>Daily step-by-step plan</li>
+        <li>Online trainer support</li>
+      </ul>
+      <a href="https://buy.stripe.com/test_7sI8y58rfaeG6gMdQR" target="_blank">
+        <button>Subscribe</button>
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your own workout plan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+            color: #333;
+        }
+        h1 {
+            font-size: 72px;
+            color: #051e40;
+            margin: 0;
+            line-height: 1;
+            padding: 10;
+        }
+        h2 {
+            font-size: 36px;
+            color: #001122;
+            line-height: 1.2;
+        }
+        .footer h2 {
+            font-size: 50px;            
+        }
+
+        .secondary_text {
+            font-size: 24px;
+            color: #888888
+        }
+        .container_main {
+            margin: auto;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container_main img {
+            max-width: 750px;
+            border-radius: 0px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px 0;
+            background-color: #f4f4f4;
+        }
+        .section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        .section img {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 15px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #0047ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #0036cc;
+        }
+        .content-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+        .content-grid .content, .content-grid .image {
+            flex: 1;
+            min-width: 280px;
+        }
+        @media (max-width: 768px) {
+            .content-grid {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        .footer {
+            padding: 40px 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container_main section">
+        <h1>Your own workout plan</h1>
+        <img src="workoutplan_1_top.jpg" alt="Workout">
+        <p class="secondary_text">Get a fully personalized workout plan tailored to your lifestyle, body, and health from a certified fitness trainer.</p>
+        <a href="quiz.html" class="button">Get personalized workout plan</a>
+    </div>
+
+    <div class="footer">
+    
+        <div class="container">
+        <div class="content-grid section">
+            <div class="image">
+                <img src="workoutplan_2.jpg" alt="Personal plan">
+            </div>
+            <div class="content">
+                <h2>What is a personal workout plan?</h2>
+                <p class="secondary_text">A personal workout plan is a custom fitness program designed to match your goals, lifestyle, and fitness level. It helps you achieve results faster by focusing on exercises and schedules tailored just for you.</p>
+            </div>
+        </div>
+
+        <div class="content-grid section">
+            <div class="content">
+                <h2>Why do you need it?</h2>
+                <p class="secondary_text">A personal workout plan saves you time and effort by giving you a clear path to your fitness goals. It eliminates guesswork, keeps you motivated, and ensures every exercise works for you.</p>
+            </div>
+            <div class="image">
+                <img src="workoutplan_3.jpg" alt="Workout motivation">
+            </div>
+        </div>
+
+        <div class="content-grid section">
+            <div class="image">
+                <img src="workoutplan_4.jpg" alt="Trainer">
+            </div>
+            <div class="content">
+                <h2>Why with me?</h2>
+                <p class="secondary_text">Hi, I’m Anastasia, a certified personal trainer and fitness coach with a background in medical education. Since 2019, I’ve been helping clients achieve their fitness goals through personalized workout and nutrition plans.</p>
+            </div>
+        </div>
+    </div>
+
+
+        <h2>Ready to start?</h2>
+        <a href="quiz.html" class="button">Get personalized workout plan</a>
+    </div>
+</body>
+</html>
