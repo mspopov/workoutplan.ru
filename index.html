@@ -17,7 +17,7 @@
             color: #051e40;
             margin: 0;
             line-height: 1;
-            padding: 10;
+            padding: 10px;
         }
         h2 {
             font-size: 36px;
@@ -85,12 +85,41 @@
             flex: 1;
             min-width: 280px;
         }
+        
         @media (max-width: 768px) {
-            .content-grid {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
+    h1 {
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .footer h2 {
+        font-size: 28px;
+    }
+
+    .secondary_text {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 20px 10px;
+    }
+
+    .container_main,
+    .container {
+        width: 95%;
+        padding: 10px 0;
+    }
+
+    .content-grid {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
         .footer {
             padding: 40px 0;
             background-color: #f4f4f4;
